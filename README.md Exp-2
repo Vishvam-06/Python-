@@ -1,93 +1,36 @@
 # Experiment–2
 ## Title
 Lists in Python: Indexing, Slicing, and List Methods
-## Aim
-To understand Python lists and perform operations such as indexing, slicing, and using built-in list methods.
-________________________________________
-## Objectives
-•	To create and access lists
-•	To perform indexing and slicing operations
-•	To apply commonly used list methods
-•	To understand mutable nature of lists
-•	To perform list traversal and modification
-________________________________________
-## Theory
-1. Introduction to Lists
-A list is a built-in data structure in Python used to store multiple values in a single variable. Lists are written using square brackets [ ] and elements are separated by commas.
-Lists are one of the most widely used data structures in Python because they are flexible and dynamic.
-________________________________________
-2. Characteristics of Python Lists
-•	Ordered: Elements maintain insertion order
-•	Indexed: Each element has a unique index starting from 0
-•	Mutable: Elements can be modified after creation
-•	Heterogeneous: Can store different data types in one list
-•	Allows Duplicates: Same value can appear multiple times
+## Aim: Study of list in python
 
-List Creation
-Lists can be created in multiple ways:
-•	Using square brackets
-•	Using the list() constructor
-Lists can also be nested, meaning a list can contain another list.
-________________________________________
-4. Indexing in Lists
-Indexing allows access to individual elements of a list.
-Types of Indexing
-•	Positive Indexing: Starts from 0 (left to right)
-•	Negative Indexing: Starts from -1 (right to left)
-Element	A	B	C	D
-Index	0	1	2	3
-Negative Index	-4	-3	-2	-1
-________________________________________
-5. Slicing in Lists
-Slicing is used to extract a portion (sublist) from a list.
-General Syntax:
-list_name[start : end : step]
-Meaning of each part:
-•	start → index to begin slicing (included)
-•	end → index to stop slicing (excluded)
-•	step → gap between elements (optional)
+## Theory:
+In this experiment we learned how to use and edit lists in python. We added elements to list, removed elements from list, sorted elements of list,etc.
+list.append() is used to add elements into the list, list.remove() is used to remove elements from list, max() is used to find maximum , min() used to find minimum, len() is used to find length of list.
+list1.extend(list2) is used to merge two lists.
+list[2] is used to find third element of the list.
 
-Types of slicing:
-•	Beginning slice
-•	Ending slice
-•	Full slice
-Slicing does not modify the original list.
-________________________________________
-6. Mutability of Lists
-Lists are mutable, meaning their elements can be changed after creation.
-Operations possible due to mutability:
-•	Updating elements
-•	Adding new elements
-•	Removing elements
-This feature makes lists suitable for dynamic data storage.
-________________________________________
-7. List Traversal
-Traversal means accessing each element of the list one by one.
-Traversal can be done using:
-•	for loop
-•	while loop
-Traversal is commonly used for data processing and analysis.
-________________________________________
-8. List Methods
-Python provides several built-in methods to manipulate lists.
-Method	Description
-append()	Adds element at the end
-insert()	Inserts element at given index
-remove()	Removes specified element
-pop()	Removes element by index
-sort()	Sorts list
-reverse()	Reverses list
-clear()	Removes all elements
-count()	Counts occurrences
-index()	Returns index of element
-________________________________________
-9. Built-in Functions for Lists
-Python provides built-in functions to work with lists:
-Function	Purpose
-len()	Number of elements
-max()	Maximum value
-min()	Minimum value
-sum()	Sum of elements
+## Algorithm:
+a)Algorithm: Analyzing Student Marks
+    1)Initialize Data: Create a list containing the numerical marks of the students.
+    2)Find Extremes:
+        Identify the highest value in the list (max()).
+        Identify the lowest value in the list (min()).
+    3)Count Entries: Determine how many items (students) are in the list(len()).
+    4)Calculate Totals: * Add all the marks together to get the Sum(sum()).
+    5)Calculate the Mean: Divide the Sum by the Total Number of Students to find the Average(sum()/len()).
+    6)Organize Data: Sort the list of marks from the lowest value to the highest value (Ascending Order)(list.sort()).
+    7)Display Results: Print all the calculated values and the sorted list to the screen.
+
+b)Modifying a Grocery List
+    1)Create the List: Start with an initial list of five items: carrot, potato, spinach, eggplant, and cheese.
+    2)Add an Item: Update the list by adding "milk" to the very end using ".append("milk")" command.
+    3)Remove an Item: Search for "potato" in the list and delete it using ".remove("potato")" command.
+    4)Remove another Item: Search for "carrot" in the list and delete it using ".remove("carrot")" command.
+    5)Output Results: Display the final, updated version of the list.
+
+## conclusion: Hence lists were implemented in python and operations were done on the lists.
+
+
 1. Student Marks Management System
 A teacher wants to store marks of students in a list.
 Tasks:
